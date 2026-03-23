@@ -1,0 +1,33 @@
+// Digital Descent dark purple theme
+// Colors sourced from https://digital-descent.com/
+
+$color-scheme: dark;
+
+// Core palette
+$dd-dark-purple: hsl(273, 75%, 11%);    // #1a0730 - main background
+$dd-section-bg: #1e0731;                 // section backgrounds
+$dd-burple: hsl(262, 71%, 27%);          // #2d1476
+$dd-ksu-purple: hsl(275, 54%, 33%);      // #522781
+$dd-purple-pink: hsl(320, 80%, 44%);     // #ca1672 - accent / links
+$dd-purple-pink-alt: hsl(320, 80%, 34%); // #9e1159
+$dd-blue-green: hsl(168, 64%, 40%);      // #25a88c - secondary accent
+$dd-platinum: hsl(0, 0%, 90%);           // #e6e6e6
+
+// Map to Just the Docs variables
+$body-background-color: $dd-dark-purple;
+$body-heading-color: #fff;
+$body-text-color: $dd-platinum;
+$link-color: $dd-purple-pink;
+$nav-child-link-color: $dd-platinum;
+$sidebar-color: $dd-section-bg;
+$base-button-color: $dd-burple;
+$btn-primary-color: $dd-ksu-purple;
+$code-background-color: darken($dd-dark-purple, 3%);
+$code-linenumber-color: $dd-platinum;
+$feedback-color: lighten($dd-section-bg, 5%);
+$table-background-color: $dd-section-bg;
+$search-background-color: $dd-section-bg;
+$search-result-preview-color: $dd-platinum;
+$border-color: rgba($dd-ksu-purple, 0.4);
+
+@import "./vendor/accessible-pygments/github-dark";

@@ -1,1 +1,69 @@
-// custom SCSS (or CSS) goes here
+// Digital Descent custom styles
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: hsl(320, 80%, 44%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(320, 80%, 34%);
+}
+
+// Active nav link accent
+.nav-list-item .nav-list-link.active {
+  border-left: 3px solid hsl(320, 80%, 44%);
+}
+
+// Button hover gradient
+.btn-primary,
+.btn-primary:hover {
+  background-image: linear-gradient(90deg, hsl(275, 54%, 33%), hsl(262, 71%, 27%));
+  color: #fff;
+}
+
+// Headings weight
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+// Search input dark style
+.search-input {
+  background-color: #1e0731;
+  color: hsl(0, 0%, 90%);
+
+  &::placeholder {
+    color: rgba(230, 230, 230, 0.5);
+  }
+}
+
+// Link hover
+a:hover {
+  color: hsl(168, 64%, 40%);
+}
+
+// Site title styling
+.site-title {
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+// Sidebar separator
+.side-bar {
+  border-right-color: rgba(82, 39, 129, 0.4);
+}
+
+// Code blocks
+.highlight,
+pre.highlight {
+  border: 1px solid rgba(82, 39, 129, 0.3);
+  border-radius: 8px;
+}
